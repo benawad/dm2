@@ -1,6 +1,7 @@
 \documentclass[12pt]{article}
 \usepackage[margin=1in]{geometry} 
 \usepackage{amsmath,amsthm,amssymb,amsfonts}
+\usepackage{tikz}
  
 \newcommand{\N}{\mathbb{N}}
 \newcommand{\Z}{\mathbb{Z}}
@@ -35,7 +36,7 @@ Reflexive proof:
 
 Symmetric proof:
 
-1. Let $x - y = \frac{a}{b}$ where x, y are real numbers and a, b are integers (definition of rational)
+1. Assume $x - y = \frac{a}{b}$ where x, y are real numbers and a, b are integers (definition of rational)
 
 2. $-\frac{a}{b} = y - x$ (algebra)
 
@@ -100,5 +101,37 @@ c. $\{ (a, b) \in R^2\}$
 \newline
 e. $\{ (a, b) \in R^2 | a > b\}$
 
+\begin{problem}{9.6.10}
+\end{problem}
+
+Not partial order because it is not transitive. c $\rightarrow$ d, d $\rightarrow$ b, but c does not go to b
+
+\begin{problem}{9.6.22}
+\end{problem}
+
+c.
+
+\begin{tikzpicture}[auto, node distance=3cm, every loop/.style={},
+                    thick,main node/.style={circle,draw,font=\sffamily\Large\bfseries}]
+
+  \node[main node] (25) {25};
+  \node[main node] (15) [right of=25] {15};
+  \node[main node] (11) [right of=15] {11};
+  \node[main node] (10) [right of=11] {10};
+  \node[main node] (3) [below of=15] {3};
+  \node[main node] (5) [right of=3] {5};
+  \node[main node] (2) [right of=5] {2};
+
+  \path[every node/.style={font=\sffamily\small}]
+  (25) edge node [right] {} (5)
+  (15) edge node [right] {} (5)
+  (10) edge node [left] {} (5)
+  (2) edge node {} (10)
+  (3) edge node {} (15)
+  ;
+\end{tikzpicture}
+
+\begin{problem}{9.6.26}
+\end{problem}
 
 \end{document}
