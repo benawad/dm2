@@ -1,0 +1,93 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry} 
+\usepackage{amsmath,amsthm,amssymb,amsfonts}
+\usepackage{tikz}
+ 
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+ 
+\newenvironment{problem}[2][Problem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+%If you want to title your bold things something different just make another thing exactly like this but replace "problem" with the name of the thing you want, like theorem or lemma or whatever
+ 
+\begin{document}
+ 
+%\renewcommand{\qedsymbol}{\filledbox}
+%Good resources for looking up how to do stuff:
+%Binary operators: http://www.access2science.com/latex/Binary.html
+%General help: http://en.wikibooks.org/wiki/LaTeX/Mathematics
+%Or just google stuff
+ 
+\title{Discrete Math 2 HW 2}
+\author{Ben Awad}
+\maketitle
+ 
+\begin{problem}{9.5.22}
+\end{problem}
+It is an equivalence relation
+
+\begin{problem}{9.5.24}
+    a-c
+\end{problem}
+
+a. No
+b. Yes
+c. Yes
+
+\begin{problem}{9.5.16}
+\end{problem}
+
+Reflexive proof:
+
+1. Let a,d be positive integers
+
+2. ad=da
+
+3. ad=ad (commutative)
+
+Symmetric proof:
+
+1. Assume (a,b) related to (c,d) and a,b,c,d are positive integers
+
+2. ad=bc (definition for relation)
+
+3. cb=ad (algebra)
+
+Transitive proof:
+
+1. Assume (a,b) related to (c,d) and (c,d) related to (e, f) and a,b,c,d,e,f are positive integers
+
+2. ad=bc (definition of relation)
+
+3. cf=de (definition of relation)
+
+4. $\frac{a}{b} = \frac{c}{d}$
+
+5. $\frac{c}{d} = \frac{e}{f}$
+
+6. $\frac{a}{b} = \frac{e}{f}$
+
+7. af=be (algebra)
+
+\begin{problem}{9.5.40}
+\end{problem}
+a. $\{ c,d \in \mathbb{Z}^+ | d=2c \}$
+
+\begin{problem}{Let R and S be relations on the set...}
+\end{problem}
+
+a. \{(a, b),(b, d),(c, b),(d, e),(d, f),(a, a),(b, b),(c, c),(d, d),(e, e),(f, f)\}
+
+b. \{(a, b),(b, d),(c, b),(d, e),(d, f),(b, a),(d, b),(b, c),(e, d),(f,d)\}
+
+c. \{(a, b),(b, d),(c, b),(d, e),(d, f),(b, f),(b, e),(c, d),(c, e),(c, f),(a, d),(a, f),(a, e)\}
+
+d. \{(b, a),(b, c),(d, b),(d, d),(e, b),(f, d),(b, b),(a, a),(c, c),(e, e),(f, f)\} 
+
+e. \{(b, a),(b, c),(d, b),(d, d),(e, b),(f, d),(a, b),(b, e),(c, b),(b, d),(d, f)\} 
+
+f. \{(b, a),(b, c),(d, b),(d, d),(e, b),(f, d),(d, a),(e, a),(e, c),(d, c),(f, c),(f, b),(f, a)\} 
+
+R is not a partial order on set A because it is not reflexive because (a, a) is not in R. Therefore the first part of the implication is always false, so the whole thing is true.
+
+\end{document}
