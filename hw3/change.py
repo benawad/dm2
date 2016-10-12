@@ -1,5 +1,4 @@
 import sys
-import numpy as np
 
 # Dynamic Programming Python implementation of Coin Change problem
 def count(S, m, n):
@@ -22,10 +21,9 @@ def count(S, m, n):
  
             # total count
             table[i][j] = x + y
-            print("%s: x|%s|%s y|%s|%s" % (i, i - S[j], x, i, y))
  
     return table[n][m-1]
- 
+
 # Driver program to test above function
 arr = [4, 6, 10]
 m = len(arr)
