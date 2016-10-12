@@ -1,0 +1,142 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry} 
+\usepackage{amsmath,amsthm,amssymb,amsfonts}
+\usepackage{tikz}
+ 
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+ 
+\newenvironment{problem}[2][Problem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+%If you want to title your bold things something different just make another thing exactly like this but replace "problem" with the name of the thing you want, like theorem or lemma or whatever
+ 
+\begin{document}
+ 
+%\renewcommand{\qedsymbol}{\filledbox}
+%Good resources for looking up how to do stuff:
+%Binary operators: http://www.access2science.com/latex/Binary.html
+%General help: http://en.wikibooks.org/wiki/LaTeX/Mathematics
+%Or just google stuff
+ 
+\title{Discrete Math 2 HW 3}
+\author{Ben Awad}
+\maketitle
+ 
+\begin{problem}{8.2.2 a-g}
+\end{problem}
+
+a. Degree 2
+
+b. No, there is no $a_n$ term
+
+c. No, cannot square $a_{n-1}$
+
+d. Degree 3
+
+e. No, cannot have non-constant coefficient
+
+f. No, cannot have an n term
+
+g. Degree 7
+
+\begin{problem}{8.2.4 f,g}
+\end{problem}
+
+f. 
+
+$r^2+6r+9$
+
+$(r+3)(r+3)$
+
+$a_n = \alpha_1(-3)^n + \alpha_2(-3)^nn$
+
+$3 = \alpha_1$
+
+$-3=\alpha_1(-3) + \alpha_2(-3)$
+
+$\alpha_1 = 3$
+
+$\alpha_2 = -2$
+
+$a_n = 3(-3)^n - 2(-3)^nn$
+
+g.
+
+$r^2-\frac{4}{5}r-\frac{1}{5}=0$
+
+$\frac{1}{5}(r-1)(5r+1)$
+
+$a_n = \alpha_1(\frac{1}{5})^n + \alpha_2$
+
+$2 = \alpha_1 + \alpha_2$
+
+$8 = \frac{-\alpha_1}{5} + \alpha_2$
+
+$-5 = \alpha_1$
+
+$7 = \alpha_2$
+
+$a_n = -5(\frac{-1}{5})^n + 7$
+
+\begin{problem}{8.2.22}
+\end{problem}
+
+$\alpha_1(-1)^n + \alpha_2(-1)^nn + \alpha_3(-1)^nn^2 + \alpha_4(2)^n + \alpha_5(2)^nn + \alpha_6(5)^n + \alpha_7(5)^nn + \alpha_8(7)^n$
+
+\begin{problem}{8.supp.4 a,b,c}
+\end{problem}
+
+a. $a_n = 3a_{n-1} - a_{n-2}$
+
+$3a_{n-1}$ stands for the 2 new bacteria in the colony for each bacteria present the previous hour
+
+$-a_{n-2}$ stands for the bacteria dieing after 2 hours
+
+b. $(50-30\sqrt{5})(\frac{3}{2}-\frac{\sqrt{5}}{2})^n + (50+30\sqrt{5})(\frac{3}{2}+\frac{\sqrt{5}}{2})^n$
+
+c. 10 hours
+
+\begin{problem}{8.supp.6}
+\end{problem}
+
+
+
+\begin{problem}{8.supp.12}
+\end{problem}
+
+$r^3-3r^2+3r-1$
+
+$(r-1)^3$
+
+$\alpha_1 + \alpha_2 n + \alpha_3 n^2$
+
+$\alpha_1 = 2$
+
+$\alpha_2 + \alpha_3 = 0$
+
+$2\alpha_2+4\alpha_3=2$
+
+$\alpha_2 = -1$
+
+$\alpha_3 = 1$
+
+$a_n = n^2 - n + 2$
+
+\begin{problem}{az strings}
+\end{problem}
+
+$25a_{n-1}+25^{n-1}$
+
+$25^{n-1}$ stands for the number of valid strings that start with a z
+
+$25a_{n-1}$ stands for the number of valid strings that don't start with a z
+
+$a_0 = 1$
+
+$a_1 = 26$
+
+$a_n = 25^n + \frac{1}{25}n25^n$
+
+$a_5 = 11718750$
+
+\end{document}
